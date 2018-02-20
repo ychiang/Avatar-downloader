@@ -5,6 +5,9 @@ var fs = require('fs');
 var owner = process.argv[2];
 var repo = process.argv[3];
 
+if (!owner || !repo) {
+  return console.log('你來鬧的嗎！！！')
+}
 // STEP 1: initialization
 console.log('Welcome to the GitHub Avatar Downloader!');
 //THIS IS FUNCTION DECLARATION
